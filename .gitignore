@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+.gitignore
+z.txt
+requirements.txt
+123.pub
+LICENSE
+mtz

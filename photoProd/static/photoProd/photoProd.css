@@ -1,0 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.root{
+  width: 200px;
+  height: 200px;
+  border: 1px solid blue;
+  position: relative;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#leftPhotoProd{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 25px;
+  border: none;
+  background-color: rgb(121, 213, 255);
+  color: white;
+}
+
+
+#rightPhotoProd{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 20px;
+  height: 25px;
+  border: none;
+  background-color: rgb(121, 213, 255);
+  color: white;
+}

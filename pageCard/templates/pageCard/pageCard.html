@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div id="pageCard">
+        <div id="imageContentPageCard">
+            <button id="imageLeft"><</button>
+            {% for item in listProd %}
+                <img src="{{ item.photo.url }}" alt="">
+            {% endfor %}
+            <button id="imageRight">></button>
+        </div>
+        <div id="textContentPage">
+            <div id="nameContentpageCard"><div>{{ prod.name }}</div></div>
+            <div id="priceContentpageCard">{{ prod.price }}руб.</div>
+        </div>
+        <div id="buttonContentPage">
+            <button id="addCart">Добавить в корзину</button>
+            <button id="momentalBuy">Купить сейчас</button>
+        </div>
+        </div>
+    </div>
+
+{% endblock main %}
+
+

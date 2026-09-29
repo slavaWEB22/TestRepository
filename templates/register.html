@@ -1,0 +1,10 @@
+<form action="{% url 'register' %}" class="formAuthen" method="post" id="register" popover="">
+    {% csrf_token %}
+    <div><h1>Регестрация</h1></div>
+    <input type="text" name="username" placeholder="Имя:">
+    <input type="email" name="email" placeholder="Почта:">
+    <input type="password" name="password1" placeholder="Пароль:">
+    <input type="password" name="password12" placeholder="Повторный пароль:">
+    <input type="submit" value="Зарегестрироваться">
+    <button popovertarget="login" id="btnLogin">login</button>
+</form>

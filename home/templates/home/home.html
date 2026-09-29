@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="cardContainer">
+    {% for item in prod %}
+        <a href="{% url "pageCard" item.id %}">
+            <div class="cardProd">
+                <div><img src="{{ item.photo.url }}" width="213px" height="284px" alt=""></div>
+                <div>{{ item.price }}</div>
+                <div> {{ item.name }} </div>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+{% endblock main %}

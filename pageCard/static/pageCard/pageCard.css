@@ -1,0 +1,62 @@
+#pageCard{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-areas: "photo text buy";
+    height: 100vh;
+    padding: 50px;
+}
+#imageContentPageCard{
+    grid-area: photo;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: relative;
+}
+
+#imageContentPageCard > img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+#imageContentPageCard > #imageLeft{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 10%;
+  height: 10%;
+  font-size: 30px;
+  border: none;
+  background-color: rgba(0,0,0, 0);
+  z-index: 2;
+}
+#imageContentPageCard > #imageRight{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 10%;
+  height: 10%;
+  font-size: 30px;
+  border: none;
+  background-color: rgba(0,0,0, 0);
+  z-index: 2;
+}
+#imageContentPageCard{
+    height: 100%;
+}
+#imageContentPageCard > img{
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#textContentPage{
+    grid-area: text;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#buttonContentPage{
+    grid-area: buy;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}

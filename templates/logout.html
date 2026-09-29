@@ -1,0 +1,5 @@
+<form action="{% url 'logout' %}" method="post" id="logout" popover="">
+    {% csrf_token %}
+    
+    Вы уверены? <input type="submit" value="Да">
+</form>

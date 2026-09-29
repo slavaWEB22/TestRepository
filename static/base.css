@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(245 247 250);
+}
+
+.base-container{
+    height: 100vh;
+}
+
+header{
+    container-type: inline-size;
+    container-name: headerContainer;
+}
+
+@container headerContainer (max-width: 400px){
+    #formSearch{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #formSearch > #inputSearch{
+        flex: 1;
+        font-size: 25px;    
+        color: rgb(94, 93, 93);
+    }
+    #formSearch > #inputSearch::placeholder{
+        color: rgba(193, 193, 193, 0.8);
+    }
+    #formSearch > #submitSearch{
+        width: 45px;
+    }
+    #formSearch > .inputSearchElements{
+        border: 1px solid rgb(193, 193, 193);
+        height: 45px;
+    }
+    #submitSearch{
+        background-color: rgb(128, 212, 251);
+    }
+}
+
+@container headerContainer (max-width: 600px){
+    #formSearch{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #formSearch > #inputSearch{
+        font-size: 25px;    
+        color: rgb(94, 93, 93);
+    }
+    #formSearch > #inputSearch::placeholder{
+        color: rgba(193, 193, 193, 0.8);
+    }
+    #formSearch > #submitSearch{
+        width: 45px;
+    }
+    #formSearch > .inputSearchElements{
+        border: 1px solid rgb(193, 193, 193);
+        height: 45px;
+    }
+    #submitSearch{
+        background-color: rgb(128, 212, 251);
+    }
+    
+}
+
+form:popover-open{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+}
+
+.formAuthen:popover-open > div{
+    display: flex;
+    justify-content: center;
+}
+
+.formAuthen:popover-open{
+        width: 70%;
+        height: 80%;
+        justify-content: space-evenly;
+        padding: 5px;
+        border-radius: 7px;
+        
+    }
+    .formAuthen:popover-open > input:not([type="submit"]){
+        height: 10%;
+        background-color: rgb(128, 212, 251);
+        color: white;
+        font-size:1.5rem;
+        
+    }
+    .formAuthen:popover-open > input:not([type="submit"])::placeholder{
+        color: white;
+        font-size:1.5rem;
+    }
+    .formAuthen:popover-open > input[type="submit"]{
+        height: 7%;
+        background-color: rgb(128, 212, 251);
+        color: white;
+        font-size:1.5rem;
+}
+
+#logout:popover-open{
+        width: 55%;
+        height: 10%;
+        padding: 5px;
+        border-radius: 7px;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+#logout:popover-open > input[type="submit"]{
+        background-color: rgb(128, 212, 251);
+        color: white;
+        font-size:1.5rem;
+        width: 20%;
+}
+
+#main-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bottomPanel{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgb(128, 212, 251);;
+    padding: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bottomPanel > button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+}
+
+#btnHome{
+    display: flex;
+    align-items: center;
+}
+
+.bottomPanelIcon{
+    object-fit: contain;
+    width: 30px;
+    padding: 0;
+}

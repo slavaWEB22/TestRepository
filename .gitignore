@@ -222,3 +222,5 @@ requirements.txt
 123.pub
 LICENSE
 mtz
+.venv
+__pycache__
